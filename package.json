@@ -1,6 +1,7 @@
 {
   "name": "abm-contractor-app",
   "version": "0.1.0",
+  "main": "./src/index.js",
   "private": true,
   "dependencies": {
     "react": "^16.2.0",

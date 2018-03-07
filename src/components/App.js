@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
-
+import { NavbarComponent } from './subcomponents'
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src="./assets/img/logo.svg" className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div id='main-section'>
+        <NavbarComponent />
+        <main>
+          {this.props.children}
+        </main>
       </div>
     );
   }

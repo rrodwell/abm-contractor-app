@@ -1,7 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, IndexRoute } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import App from './../components/App';
-import { Home, HelloWorld } from './../components/pages';
+import HelloWorld from '../components/pages/HelloWorld';
 
 const routes = (
   <Router>

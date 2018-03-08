@@ -2,14 +2,6 @@ import React, { Component } from 'react';
 
 
 class HelloWorld extends Component {
-  constructor() {
-    super();
-
-  }
-
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
 
   render () {
     return (

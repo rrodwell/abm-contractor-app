@@ -33,6 +33,9 @@ body {
   to { transform: rotate(360deg); }
 }
 
+main {
+  width: auto;
+}
 
 /* Python App CSS */
 .jumbotron {
@@ -45,11 +48,10 @@ body {
   margin-left: 1%;
 }
 
-#add-appt {
+#new-btn{
   margin: 10px 0;
 }
 
-#appt-form, #add-btn, #cancel-btn {
+#cancel-btn {
   margin: 10px;
-  display: none;
 }

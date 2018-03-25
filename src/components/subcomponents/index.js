@@ -1,11 +1,13 @@
 import NavbarComponent from './NavbarComponent';
-// import CardComponent from './CardComponent';
-// import APILoginForm from './APILoginForm';
+import AddSubcontractorForm from './AddSubcontractorForm';
+import SubcontractorTable from './SubcontractorTable';
 import SquareButton from './SquareButton';
+import SearchForm from './SearchForm';
 
 module.exports = {
   NavbarComponent,
-  // APILoginForm,
-  // CardComponent,
+  SubcontractorTable,
+  AddSubcontractorForm,
   SquareButton,
+  SearchForm
 };

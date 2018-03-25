@@ -1,8 +1,8 @@
 import Home from './Home';
-import HelloWorld from './HelloWorld';
+import LoginForm from './LoginForm';
 
 
 module.exports = {
   Home,
-  HelloWorld,
+  LoginForm,
 };

@@ -15,14 +15,12 @@ class Home extends Component {
       newSubButton: 'inline-block'
     }
 
-    this.addSub = this.addSub.bind(this);
     this.cancelForm = this.cancelForm.bind(this);
 
   }
 
   componentDidMount() {
     window.scrollTo(0, 0);
-    console.log(this.state)
   }
 
   openForm() {
@@ -30,24 +28,13 @@ class Home extends Component {
       formDisplay: 'block',
       newSubButton: 'none'
     });
-
-    console.log("OpenForm: ",this.state);
-
   }
 
   cancelForm() {
     this.setState({
       formDisplay: 'none',
-      addButton: 'none',
-      cancelButton: 'none',
       newSubButton: 'inline-block'
     });
-
-    console.log('CloseForm: ',this.state);
-  }
-
-  addSub() {
-
   }
 
   render () {

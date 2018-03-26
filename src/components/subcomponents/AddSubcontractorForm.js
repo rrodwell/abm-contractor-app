@@ -46,11 +46,14 @@ class AddSubcontractorForm extends Component {
         <SubcontractorInfo/>
         <Services/>
         <MiscCharges/>
+        <hr/>
+        <div className='text-right'>
+          <Button bsStyle='success' id='add-btn'
+              onClick={this.createNewSub}>Add Subcontactor</Button>
+          <Button bsStyle='danger' id='cancel-btn'
+              onClick={this.props.cancelForm}>Cancel</Button>
+        </div>
 
-        <Button bsStyle='success' id='add-btn'
-            onClick={this.createNewSub}>Add Subcontactor</Button>
-        <Button bsStyle='danger' id='cancel-btn'
-            onClick={this.props.cancelForm}>Cancel</Button>
       </div>
     )}
   };

@@ -1,7 +1,25 @@
 import React, { Component } from 'react';
 
+//Packages
+import $ from 'jquery';
 class SubcontractorInfo extends Component {
 
+    constructor() {
+        super();
+        this.addArea = this.addArea.bind(this);
+
+        this.state = {
+            numAreas: 1,
+        }
+    }
+
+    addArea(e) {
+        e.preventDefault()
+        console.log("Add new area");
+        var newArea = '<div class="form-group col-sm-8"><input type="text" class="form-control"/></div>'
+        $('.areas-serviced').append(newArea)
+
+    }
 
     render () {
         return (
@@ -87,13 +105,13 @@ class SubcontractorInfo extends Component {
                                 </select>
                             </div>
                         </div>
-                        <div className='col-sm-6'>
+                        <div className='col-sm-6 areas-serviced'>
                             <div className='form-group col-sm-8'>
                                 <label htmlFor='area'>Areas Serviced</label>
                                 <input type='text' className='form-control' id='id_area'/>
                             </div>
                             <div className='col-sm-4 text-right'>
-                                <button className='btn btn-primary'>
+                                <button className='btn btn-primary' onClick={this.addArea}>
                                     <span className='glyphicon glyphicon-plus'></span>
                                 </button>
                             </div>

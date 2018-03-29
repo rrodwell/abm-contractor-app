@@ -4,17 +4,23 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 class SubcontractorInfo extends Component {
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.addArea = this.addArea.bind(this);
+    }
 
-        this.state = {
-            numAreas: 1,
-        }
+    componentDidMount() {
+        // this.setState({numAreasServiced:0})
+        console.log("info: ",this.props.numAreasServiced)
     }
 
     addArea(e) {
         e.preventDefault()
+
+        let count = this.props.numAreasServiced + 1;
+        this.props.setState({numAreasServiced: count})
+
+        console.log("updated state: ", this.props.numAreasServiced)
         console.log("Add new area");
         var newArea = '<div class="form-group col-sm-8"><input type="text" class="form-control"/></div>'
         $('.areas-serviced').append(newArea)

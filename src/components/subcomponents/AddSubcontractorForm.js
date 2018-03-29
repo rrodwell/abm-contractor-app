@@ -13,6 +13,17 @@ import $ from 'jquery';
 
 class AddSubcontractorForm extends Component {
 
+  constructor() {
+    super()
+
+    this.state = {
+      numAreasServiced: 0,
+      numServices: 0,
+      numCharges: 0
+    }
+
+  }
+
   createNewSub(){
     //grab all information from form
     let name = $('#id_name').val();
@@ -43,9 +54,9 @@ class AddSubcontractorForm extends Component {
           display: this.props.formDisplay
         }}>
 
-        <SubcontractorInfo/>
-        <Services/>
-        <MiscCharges/>
+        <SubcontractorInfo {...this.state}/>
+        <Services {...this.state}/>
+        <MiscCharges {...this.state}/>
         <hr/>
         <div className='text-right'>
           <Button bsStyle='success' id='add-btn'

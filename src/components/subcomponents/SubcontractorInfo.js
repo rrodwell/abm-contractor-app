@@ -17,8 +17,8 @@ class SubcontractorInfo extends Component {
     addArea(e) {
         e.preventDefault()
 
-        let count = this.props.numAreasServiced + 1;
-        this.props.setState({numAreasServiced: count})
+        // let count = this.props.numAreasServiced + 1;
+        // this.props.setState({numAreasServiced: count})
 
         console.log("updated state: ", this.props.numAreasServiced)
         console.log("Add new area");

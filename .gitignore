@@ -21,3 +21,5 @@ yarn-debug.log*
 yarn-error.log*
 .history
 .vscode
+firebaseConfig.js
+database.rules.json
